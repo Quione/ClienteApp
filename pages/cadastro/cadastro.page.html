@@ -8,23 +8,23 @@
 <ion-card>
 <ion-item>
   <ion-label>Nome</ion-label>
-  <ion-input></ion-input>
+  <ion-input type="text" [(ngModel)]="cliente.nome"></ion-input>
 </ion-item>
 
 <ion-item>
   <ion-label>Email</ion-label>
-  <ion-input></ion-input>
+  <ion-input type="text" [(ngModel)]="cliente.email"></ion-input>
 </ion-item>
 
 <ion-item>
   <ion-label>Senha</ion-label>
-  <ion-input></ion-input>
+  <ion-input type="password" [(ngModel)]="cliente.senha"></ion-input>
 </ion-item>
 
 <ion-item>
   <ion-label>Confirme sua Senha</ion-label>
-  <ion-input></ion-input>
+  <ion-input  type="password" [(ngModel)]="confirmSenha"></ion-input>
 </ion-item>
-<ion-button expand="block" color="success" routerLink="/login" size="small">Cadastrar</ion-button>
+<ion-button expand="block" color="success" (click)="registraCadastro()" size="small">Cadastrar</ion-button>
 </ion-card>
 </ion-content>
