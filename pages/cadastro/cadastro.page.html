@@ -25,6 +25,20 @@
   <ion-label>Confirme sua Senha</ion-label>
   <ion-input  type="password" [(ngModel)]="confirmSenha"></ion-input>
 </ion-item>
-<ion-button expand="block" color="success" (click)="registraCadastro()" size="small">Cadastrar</ion-button>
 </ion-card>
+<ion-grid>												
+  <ion-row>
+    <ion-col>
+      <ion-button color="light" href="/login">Voltar</ion-button>
+    </ion-col>
+    <ion-col>
+
+    </ion-col>
+    <ion-col>
+      <ion-button color="success" expand="block" (click)="registraCadastro()">
+        Cadastrar
+      </ion-button> 
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
